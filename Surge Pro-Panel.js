@@ -19,7 +19,6 @@ if ($trigger == "button") await httpAPI("/v1/profiles/reload");
 
   $done({
       title:"𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢",
-      content:`𝗟𝗮𝘇𝘆𝗖𝗢𝗡𝗙©️\n`+
 	  `--------------\n`+
 	  `已持续运行: ${startTime}\n`+
 	  `--------------\n`+
