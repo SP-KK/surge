@@ -2,11 +2,11 @@
 #!desc=彩云天气VIP｜TF下载修正｜notability解锁｜B站去广告｜知乎去广告+优化 等
 
 [MITM]	
-hostname = %APPEND% boxjs.com, mp.weixin.qq.com, yimuapp.com, biz.caiyunapp.com, testflight.apple.com, notability.com, *.kuwo.cn,*.lrts.me, buy.itunes.apple.com, note.youdao.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, m2u-api.getkwai.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com
+hostname = %APPEND% boxjs.com, mp.weixin.qq.com, biz.caiyunapp.com, testflight.apple.com, notability.com, *.kuwo.cn,*.lrts.me, buy.itunes.apple.com, note.youdao.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, m2u-api.getkwai.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com
 
 [Script]
 # 一木记账VIP解锁 yimuapp.com
-一木记账解锁 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/yimuapp\.com(:8082)?\/(bookkeeping\/user\/getUser),script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/YiMuJiZhang.js
+# 一木记账解锁 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/yimuapp\.com(:8082)?\/(bookkeeping\/user\/getUser),script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/YiMuJiZhang.js
 
 # 彩云天气SVIP解锁 biz.caiyunapp.com
 彩云天气SVIP = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/biz\.caiyunapp\.com\/v2\/user.+,script-path=https://gjds.vip/QX/pojie/cytq.js
