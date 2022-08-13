@@ -2,7 +2,7 @@
 #!desc=彩云天气VIP｜TF下载修正｜notability解锁｜B站去广告｜知乎去广告+优化等
 
 [MITM]	
-hostname = %APPEND% rich.kuwo.cn, *.kwcdn.kuwo.cn, mobilead.kuwo.cn, musicpay.kuwo.cn, vip1.kuwo.cn, audiobookpay.kuwo.cn, tingshu.kuwo.cn, omp-audiobookpay.lrts.me, boxjs.com, mp.weixin.qq.com, biz.caiyunapp.com, testflight.apple.com, notability.com, *.kuwo.cn,*.lrts.me, buy.itunes.apple.com, note.youdao.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, m2u-api.getkwai.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com
+hostname = %APPEND% rich.kuwo.cn, *.kwcdn.kuwo.cn, mobilead.kuwo.cn, musicpay.kuwo.cn, vip1.kuwo.cn, audiobookpay.kuwo.cn, tingshu.kuwo.cn, omp-audiobookpay.lrts.me, boxjs.com, mp.weixin.qq.com, biz.caiyunapp.com, testflight.apple.com, notability.com, buy.itunes.apple.com, note.youdao.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, m2u-api.getkwai.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com
 
 [Script]
 
