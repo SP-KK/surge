@@ -94,8 +94,8 @@ BiliBili_我的页面处理 = type=http-response,requires-body=1,max-size=0,patt
 ^https?:\/\/.+\.kwcdn\.kuwo\.cn\/star\/upload\/.+ - reject
 ^https?:\/\/mobilead\.kuwo\.cn\/EcomResourceServer\/Ad - reject
 # 酷我听书_Blockad@ddgksf2013
-https?:\/\/audiobookpay\.kuwo\.cn/a\.p\?op=get_advertright - reject-dict
-https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject-dict
+https?:\/\/audiobookpay\.kuwo\.cn/a\.p\?op=get_advertright - reject
+https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p\?op=get_advertright - reject
 
 [Map Local]
 # 知乎
