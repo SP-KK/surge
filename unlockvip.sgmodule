@@ -2,7 +2,7 @@
 #!desc=彩云天气VIP｜notability解锁｜B站去广告｜知乎去广告+优化等
 
 [MITM]	
-hostname = %APPEND% tiebac.baidu.com, *.baidu.com, *kuwo*,*lrts*, rich.kuwo.cn, *.kwcdn.kuwo.cn, mobilead.kuwo.cn, musicpay.kuwo.cn, vip1.kuwo.cn, audiobookpay.kuwo.cn, tingshu.kuwo.cn, omp-audiobookpay.lrts.me, boxjs.com, mp.weixin.qq.com, biz.caiyunapp.com, testflight.apple.com, notability.com, buy.itunes.apple.com, note.youdao.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, m2u-api.getkwai.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com
+hostname = %APPEND% tiebac.baidu.com, *.baidu.com, boxjs.com, mp.weixin.qq.com, biz.caiyunapp.com, testflight.apple.com, notability.com, buy.itunes.apple.com, note.youdao.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, m2u-api.getkwai.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com
 
 [Script]
 # > 百度贴吧去广告  tiebac.baidu.com
@@ -15,25 +15,8 @@ hostname = %APPEND% tiebac.baidu.com, *.baidu.com, *kuwo*,*lrts*, rich.kuwo.cn, 
 # 彩云天气SVIP解锁 biz.caiyunapp.com
 彩云天气SVIP = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/biz\.caiyunapp\.com\/v2\/user.+,script-path=https://gjds.vip/QX/pojie/cytq.js
 
-# Testflight下载修正 testflight.apple.com
-# TestFlight下载修正 = type=http-request,requires-body=1,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/script/043922e05c79445b6da818d0864c1b7d.js,pattern=^https?:\/\/testflight\.apple\.com\/v2\/accounts\/.*\/apps\/\d*/builds/\d*/install
-
 # notability解锁
 Notability解锁 = type=http-response ^https:\/\/notability\.com\/subscriptions script-path=https://raw.githubusercontent.com/PoetryU/Scientist/master/Scripts/notabilityvip.js, tag=notability,request-body=true
-
-# 酷我音乐解锁
-# 酷我音乐1 = type=http-response,pattern=https?:\/\/omp-audiobookpay\.lrts\.me\/a\.p$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js,script-update-interval=0
-# 酷我音乐2 = type=http-response,pattern=^https?:\/\/audiobookpay\.kuwo\.cn/a\.p,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js,script-update-interval=0
-# 酷我音乐3 = type=http-response,pattern=https://tingshu.kuwo.cn/v2/api/user/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js,script-update-interval=0
-# 酷我音乐4 = type=http-response,pattern=https?:\/\/audiobooks\.kuwo\.cn\/v2\/api\/user\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js,script-update-interval=0
-# 酷我音乐5 = type=http-response,pattern=https?:\/\/tingshu\.kuwo\.cn\/v2\/api\/pay\/vip\/extraVipStatus,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js,script-update-interval=0
-# 酷我音乐6 = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/theme,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js,script-update-interval=0
-# 酷我音乐7 = type=http-response,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver=\d$,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/kuwodl.js,script-update-interval=0
-# 酷我音乐8 = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js,script-update-interval=0
-# 酷我音乐9 = type=http-request,pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/enc\/user\/,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/kuwodl.js,script-update-interval=0
-# 酷我音乐10 = type=http-response,pattern=^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ne|\/a\.p|v\d\/api\/(user\/in|pay\/vi)|\w{3}\/v\d\/user\/vi|\w{3}\/spi\/ms|\w{3}\/v\d\/the|\w{3}\/enc\/use),requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/kwyy.js,script-update-interval=0
-# 酷我音乐11 = type=http-request,pattern=^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ui),requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/kwyy.js,script-update-interval=0
-
 
 # Picsew（解锁付费订阅） buy.itunes.apple.com
 Picsew解锁订阅 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,script-path=https://gjds.vip/QX/pojie/Picsew.js
