@@ -2,9 +2,12 @@
 #!desc=彩云天气VIP｜notability解锁｜B站去广告｜知乎去广告+优化等
 
 [MITM]	
-hostname = %APPEND% *.baidu.com, mp.weixin.qq.com, biz.caiyunapp.com, testflight.apple.com, notability.com, buy.itunes.apple.com, note.youdao.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, m2u-api.getkwai.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com
+hostname = %APPEND% *.baidu.com, api.revenuecat.com, app-measurement.com, mp.weixin.qq.com, biz.caiyunapp.com, testflight.apple.com, notability.com, buy.itunes.apple.com, note.youdao.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, m2u-api.getkwai.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com
 
 [Script]
+# > Fillball  api.revenuecat.com, app-measurement.com
+解锁Filball = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fileball.js
+
 # > 百度搜索防跳转  *.baidu.com
 百度搜索防跳转 = type=http-response,pattern=^https?:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/baidu-no-redirect.js
 
