@@ -18,7 +18,7 @@ hostname = %APPEND% *.baidu.com, api.revenuecat.com, app-measurement.com, mp.wei
 Notability解锁 = type=http-response,pattern=^https?:\/\/notability\.com\/subscriptions script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Notability.js, tag=notability,request-body=true
 
 # Picsew（解锁付费订阅） buy.itunes.apple.com
-Picsew解锁订阅 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Picsew.js
+Picsew解锁订阅 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,script-path=hhttps://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Picsew.js
 
 # 有道云笔记VIP note.youdao.com
 有道云笔记VIP = type=http-response,requires-body=1,max-size=0,pattern=https://note.youdao.com/yws/(mapi/payment|api/self),script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/ydybj.js
