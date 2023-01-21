@@ -6,7 +6,7 @@ hostname = %APPEND% *.baidu.com, api.revenuecat.com, app-measurement.com, mp.wei
 
 [Script]
 # 解锁Fileball  api.revenuecat.com, app-measurement.com
-解锁Fileball = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fileball.js
+# > 解锁Fileball = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fileball.js
 
 # > 百度搜索防跳转  *.baidu.com
 百度搜索防跳转 = type=http-response,pattern=^https?:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/baidu-no-redirect.js
