@@ -1,5 +1,5 @@
 #!name=Allone(iOS)
-#!desc=彩云天气VIP｜notability解锁｜B站去广告｜知乎去广告+优化等
+#!desc=彩云天气VIP｜B站去广告等
 
 [MITM]	
 hostname = %APPEND% *.baidu.com, api.revenuecat.com, app-measurement.com, mp.weixin.qq.com, biz.caiyunapp.com, ad.caiyunapp.com, testflight.apple.com, notability.com, buy.itunes.apple.com, note.youdao.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, m2u-api.getkwai.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com
@@ -10,16 +10,6 @@ hostname = %APPEND% *.baidu.com, api.revenuecat.com, app-measurement.com, mp.wei
 
 # 彩云天气SVIP解锁 biz.caiyunapp.com
 彩云天气SVIP = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/caiyun.js
-
-# notability解锁
-#失效 Notability解锁 = type=http-response,pattern=^https?:\/\/notability\.com\/subscriptions script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Notability.js, tag=notability,request-body=true
-
-# 有道云笔记VIP note.youdao.com
-# 失效 有道云笔记VIP = type=http-response,requires-body=1,max-size=0,pattern=https://note.youdao.com/yws/(mapi/payment|api/self),script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/ydybj.js
-
-# 美图秀秀解锁VIP api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com
-# 美图秀秀解锁VIP = type=http-response,pattern=^https:\/\/api\.xiuxiu\.meitu\.com\/v1,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mtxx.js
-,script-update-interval=0,max-size=0
 
 # 一甜相机解锁VIP m2u-api.getkwai.com
 一甜相机解锁VIP = type=http-response,pattern=^https?:\/\/m2u-api\.getkwai\.com\/api-server\/api\/v2\/vip\/vipUserInfo,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ytxj.js
