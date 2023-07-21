@@ -12,10 +12,10 @@ hostname = %APPEND% *.baidu.com, api.revenuecat.com, app-measurement.com, mp.wei
 彩云天气SVIP = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/caiyun.js
 
 # notability解锁
-Notability解锁 = type=http-response,pattern=^https?:\/\/notability\.com\/subscriptions script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Notability.js, tag=notability,request-body=true
+#失效 Notability解锁 = type=http-response,pattern=^https?:\/\/notability\.com\/subscriptions script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Notability.js, tag=notability,request-body=true
 
 # 有道云笔记VIP note.youdao.com
-有道云笔记VIP = type=http-response,requires-body=1,max-size=0,pattern=https://note.youdao.com/yws/(mapi/payment|api/self),script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/ydybj.js
+# 失效 有道云笔记VIP = type=http-response,requires-body=1,max-size=0,pattern=https://note.youdao.com/yws/(mapi/payment|api/self),script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/ydybj.js
 
 # 美图秀秀解锁VIP api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com
 # 美图秀秀解锁VIP = type=http-response,pattern=^https:\/\/api\.xiuxiu\.meitu\.com\/v1,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mtxx.js
@@ -24,9 +24,6 @@ Notability解锁 = type=http-response,pattern=^https?:\/\/notability\.com\/subsc
 # 一甜相机解锁VIP m2u-api.getkwai.com
 一甜相机解锁VIP = type=http-response,pattern=^https?:\/\/m2u-api\.getkwai\.com\/api-server\/api\/v2\/vip\/vipUserInfo,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ytxj.js
 ,script-update-interval=0,max-size=0
-
-#APTVpro buy.itunes.apple.com
-APTV解锁VIP = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,script-path=https://gitlab.com/ioshkj/quantumultx/-/raw/main/vipjs/aptvpro.js,script-update-interval=0,max-size=0
 
 # > 微信去广告
 微信去广告 = http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
